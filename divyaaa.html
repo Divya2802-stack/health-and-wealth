@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush - Mental Health Support (HTML Only)</title>
+    <!-- Basic inline styling for demonstration purposes. In a real app, this would be in a separate CSS file. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        textarea, input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't increase total width */
+        }
+        button {
+            background: #5cb85c;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayush</h1>
+        <p>Your Creative Path to Mental Wellbeing</p>
+        <nav>
+            <ul>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#mindfulness">Mindfulness</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="journal">
+            <h2>Creative Journaling</h2>
+            <p>Express your emotions and thoughts here. You can write, or imagine drawing/uploading an image.</p>
+            <textarea id="textJournal" rows="10" placeholder="How are you feeling today? Describe your day, or just write whatever comes to mind..."></textarea>
+            <p>*(In a real app, AI would analyze this text.)*</p>
+            
+            <h3>Imagine your Drawing Canvas:</h3>
+            <p>*(If this were a functional app, you'd draw here. AI would then analyze your artwork.)*</p>
+            <div style="border: 1px dashed #ccc; height: 150px; text-align: center; line-height: 150px; color: #888; margin-bottom: 15px;">
+                Drawing Area Placeholder
+            </div>
+            
+            <h3>Upload an Image for Reflection:</h3>
+            <label for="imageUpload">Select an Image:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <p>*(In a real app, AI would analyze the image for themes or emotions.)*</p>
+
+            <button>Submit for AI Reflection</button>
+            <div id="journalFeedback">
+                <p>*(AI reflections or prompts would appear here after submission in a live application.)*</p>
+            </div>
+        </section>
+
+        <section id="explore">
+            <h2>Explore & Be Inspired</h2>
+            <p>Discover AI-generated art or receive creative prompts tailored to your mood.</p>
+            <h3>AI-Generated Mood Art:</h3>
+            <div id="aiArtGallery" class="gallery">
+                <img src="C:\Users\God\Downloads\ai-generated-8476611_640.jpg" alt="AI Generated Calm Art">
+                <p>*(This image represents AI-generated art based on mood.)*</p>
+            </div>
+            
+            <h3>Creative Prompts:</h3>
+            <p id="currentPrompt">"Write a short story about finding peace in an unexpected place."</p>
+            <p>*(In a real app, clicking a button or a specific mood input would generate a unique prompt.)*</p>
+            <button>Get a New Prompt</button>
+        </section>
+
+        <section id="insights">
+            <h2>Your Inner World - Insights & Trends</h2>
+            <p>See patterns and gain understanding from your creative journey over time.</p>
+            <h3>Mood Trends:</h3>
+            <div id="moodTracker" style="border: 1px solid #eee; padding: 15px; text-align: center; margin-bottom: 15px;">
+                <p>*(A graph or visual representation of mood shifts would be here.)*</p>
+                Mood Trends Chart Placeholder
+            </div>
+            <h3>AI-Generated Summaries:</h3>
+            <div id="aiInsights">
+                <p>"AI observed a trend of positive word choice in your recent journal entries, suggesting a shift towards optimism."</p>
+                <p>*(Personalized insights and summaries derived from your data would be shown here.)*</p>
+            </div>
+        </section>
+
+        <section id="mindfulness">
+            <h2>Mindfulness & Meditation</h2>
+            <p>Personalized exercises to help you relax and focus.</p>
+            <div id="meditationPlayer">
+                <p>Listen to a calming soundscape:</p>
+                <audio controls>
+                    <source src="ss-anxiety%2F&psig=" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>*(In a real app, AI would select or adapt audio based on your preferences.)*</p>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Seeking Further Support</h2>
+            <p>If you need immediate or professional assistance, please reach out to these resources.</p>
+            <p>*(In a functional app, buttons here could link directly to resources or connect you with professionals.)*</p>
+            <p>National Crisis Hotlines: 1-282-145-2814-</p>
+            <p>Find a Therapist: <a href="https://example.com/find-therapist">www.example.com/find-therapist</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ayush. All rights reserved.</p>
+        <p>Disclaimer: This is a prototype. Always seek professional help when needed.</p>
+    </footer>
+</body>
+</html>
+
